@@ -19,4 +19,15 @@ public class Event {
     public long timestamp() {
         return timestamp;
     }
+    
+    @Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Event [type=");
+		builder.append(type);
+		builder.append(", timestamp=");
+		builder.append(timestamp);
+		builder.append("]");
+		return builder.toString();
+	}
 }
